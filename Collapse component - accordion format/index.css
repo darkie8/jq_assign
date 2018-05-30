@@ -1,0 +1,51 @@
+.parent{
+    padding: 10px 10px;
+    border: .5px solid rgb(95, 92, 92);
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}
+.container1{
+    padding: 0;
+    margin: 0;
+    background: url("Grey-Floral-Subtle-Pattern.jpg");
+    border: .5px solid rgb(204, 204, 204);
+    border-radius: 1vmax;
+    overflow: hidden;
+}
+.container1_1{
+    padding: 12px 6px 12px 6px;
+    margin: 0%;
+}
+.container2_1{
+    display: none;
+    margin: 0%;
+    padding: 20px 15px 15px 15px;
+    
+    overflow: hidden;
+
+}
+.prettyself{
+    font-size: 1.5vmax;
+    margin: 0%;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.prettydude{
+    font-size: 1.5vmax;
+    margin: 0%;
+    overflow: hidden;
+    font-family: 'Indie Flower', cursive;
+    padding: 3px;
+}
+.container1_1{
+    background-color: bisque;
+}
+.hideme{
+    display: none;
+}
