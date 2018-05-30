@@ -102,6 +102,25 @@
     -moz-flex-direction: column;
     -o-flex-direction: column;
 }
+.betawe{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    
+}
 .formInput{
     display: flex;
     display: -webkit-flex;
@@ -156,6 +175,16 @@ form{
     font-size: 13px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.buttonheightsubmit1{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    border: 1px solid black;
+    font-size: 13px;
+    border-radius: 5px;
+    
 }
 .form{
     display: flex;
