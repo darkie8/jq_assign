@@ -83,22 +83,25 @@ $(document).ready(function () {
                 // form class container remove
                 $(`#${z[m].id}`).find(`.form`).remove();
                 // putting email and password input in sliding container
-                $(`#${z[m].id}`).find('.searchdropdown').html(`<form class="form " style="padding: 2px;">
-                <input style="height:30px;position:relative;top:10px" type="text" name="firstname" value="Email" class="font-szemail emailin">
+                $(`#${z[m].id}`).find('.searchdropdown').html(`<div class ="betawe"><form class="form " style="padding: 2px;">
+                <input style="height:30px;font-family: 'IBM Plex Mono', monospace;" type="text" name="firstname" value="Email" class="font-szemail2 emailin">
                     
-            </form><form class="form" style="padding: 2px;">
-            <input type="text" name="firstname" value="Password" class="font-szemail searchin" style="height:30px;position:relative;top:10px">
-                <button class="fa-1x buttonheightsubmit" style="height:30px;position:relative;top:10px">Submit</button>
-        </form>`);
+            </form>
+            <form class="form" style="padding: 2px;">
+            <input type="text" name="firstname" value="Password" class="font-szemail2 emailin" style="height:30px;font-family: 'IBM Plex Mono', monospace;">
+        </form>
+        <button class="fa-1x buttonheightsubmit1" style="height:30px;font-family: 'IBM Plex Mono', monospace;">Submit</button>
+        </div>
+        `);
             }
             else{
                 
                 // more than widthNeed => putting email password input in p(i)
                 $(`#${z[m].id}`).find(`.part${i}`).prepend(`<form class="form formempass" style="padding: 10px;">
-                <input type="text" name="firstname" value="Email" class="font-szemail emailin">
+                <input type="text" name="firstname" value="Email" class="font-szemail emailin" style="font-family: 'IBM Plex Mono', monospace;">
                     
                  </form><form class="form formempass" style="padding: 10px;">
-                <input type="text" name="firstname" value="Password" class="font-szemail searchin">
+                <input type="text" name="firstname" value="Password" class="font-szemail searchin" style="font-family: 'IBM Plex Mono', monospace;">
                 <button class="fa-1x buttonheightsubmit">Submit</button></form>
             `);
             // removing search container
@@ -177,9 +180,17 @@ $(document).ready(function () {
    // sliding up and down of the search container
     $(`#${z[m].id}`).find(`.search`).click(function () { 
         if(n[m][1]==true)
-        {$(`#${z[m].id}`).find(`.searchdropdown`).animate({height:"47px"});
+        {
+            if($(`#${z[m].id}`).find(`.part2`).data("element")== "emailpass" || $(`#${z[m].id}`).find(`.part1`).data("element")== "emailpass" )
+            { $(`#${z[m].id}`).find(`.searchdropdown`).animate({height:"150px"});
         n[m][1] = false  
         console.log(n)}
+        else{
+            $(`#${z[m].id}`).find(`.searchdropdown`).animate({height:"47px"});
+        n[m][1] = false  
+        console.log(n)
+        }
+    }
         else { 
         $(`#${z[m].id}`).find(`.searchdropdown`).animate({height:"0px"});
         n[m][1]= true;
