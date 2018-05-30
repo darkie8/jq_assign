@@ -42,7 +42,7 @@ $(document).ready(function(){
         
     });
 
-    $('.crossout, .z').click(function () { 
+    $('.crossout, .Z').click(function () { 
         modOutChk= false;
         
     });
